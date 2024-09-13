@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1123</width>
+    <height>844</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Style For Info fram */
+
+#info_frame{
+background-color:#fff;
+border:none;
+border-radius:5px;
+}
+
+/* style for label input and combo box */
+#info_freme Qlabel,
+#info_freme QLineEdit,
+#info_freme QComboBox,
+#function_frame QPushButton,
+QHeaderView::section{
+font-family:Segoe Ui Semibold;
+font-size:12px;
+}
+
+#function_frame QPushButton{
+height:50px;
+}
+
+#addBtn{
+height:40px;
+font-family:Segoe Ui Semibold;
+font-size:14px;
+padding:5px 10px;
+border:2px solid #f0f0f0;
+border-radius:5px;
+background-color:#84e8f7;
+}
+#addBtn:hover {
+border-color:#4c96f7;
+font-size:15px;
+}
+
+/* style for label input and combo box info frame */
+
+#info_frame QLineEdit,
+#info_frame QComboBox {
+padding:4px 5px;
+border: 1px solid #838383;
+border-radius:2px;
+}
+
+
+/* Focus style for input and combo*/
+#info_frame QLineEdit:focus,
+#info_frame QComboBox:focus {
+border-color:#0055ff;
+}
+
+
+/* style for combo box drop dwon*/
+
+QComboBox::drop-down {
+background: transparent;
+borer:none;
+maargin-right: 5px;
+}
+
+/* style for dpwn aarrow icon in combo box*/
+
+QComboBox::down-arrow {
+image:url(/assets/images/arrow.svg);
+}
+
+
+/* style for the view_frame */
+#view_frame {
+background-color:#fff;
+border:none;
+border-radius:5px;
+}
+
+
+
+/* style for the border of QTabWidget */
+
+QTableWidget {
+border-radius:3px;
+border:1px solid #f0f0f0;
+}
+
+/* style for the table header section */
+
+QHeaderView::section {
+border:none;
+border-bottom:1px solid #d0c6ff;
+text-align:left;
+padding:3px 5px;
+
+}
+
+/* style for the table items */
+
+QTableWidget::item {
+border-bottom:1px solid #d0c6ff;
+color:#000;
+padding-left:3px;
+}
+
+
+/* style for the buttons in function_frame */
+
+#function_frame QPushButton {
+font-size:14px;
+padding:5px 10px;
+border:2px solid #f0f0f0;
+border-radius:5px;
+background-color:#84e8f7;
+}
+
+/* style for delete_btn*/
+
+#function_frame #deleteBtn {
+background-color:#ff8183;
+}
+
+/* hover style for buttons in function_frame*/
+
+#function_frame QPushButton:hover {
+border-color:#4c96f7;
+font-size:15px;
+}
+
+/* hover style for deleteBtn */
+
+#function_frame #deleteBtn:hover {
+border-color:#dc0004;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="1" column="0" colspan="2">
+     <widget class="QFrame" name="info_frame">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>20</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="horizontalSpacing">
+          <number>10</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>15</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Student id</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>First name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_2"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>last name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_3"/>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="horizontalSpacing">
+          <number>10</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>15</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>state</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>student</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>doctor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>assestant</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>empoly</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>gard</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>city</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="comboBox_2">
+           <item>
+            <property name="text">
+             <string>cairo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>giza</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>aswan</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>elmansora</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Elmonofia</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>red sea</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>halwan</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Email Address</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_4"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QFrame" name="view_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget
+{
+color:red;
+selection-color:green;
+selection-background-color:blue;
+}
+
+QTableWidget::item:selected 
+{
+color:white;
+background-color:blue;
+}</string>
+         </property>
+         <property name="autoScroll">
+          <bool>false</bool>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderMinimumSectionSize">
+          <number>50</number>
+         </attribute>
+         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+          <bool>true</bool>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Student id</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>First Name</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Last Name</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>State</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>City</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Email Address</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string>56565</string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>aafad</string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string>asdfaf</string>
+          </property>
+         </item>
+         <item row="0" column="3">
+          <property name="text">
+           <string>asda</string>
+          </property>
+         </item>
+         <item row="0" column="4">
+          <property name="text">
+           <string>afa</string>
+          </property>
+         </item>
+         <item row="0" column="5">
+          <property name="text">
+           <string>adfadf</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QFrame" name="function_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>15</number>
+          </property>
+          <property name="leftMargin">
+           <number>30</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>30</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="deleteBtn">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Delete</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>assets/images/delete.svg</normaloff>assets/images/delete.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clearBtn">
+            <property name="text">
+             <string>Clear</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>assets/images/clear.svg</normaloff>assets/images/clear.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="searchBtn">
+            <property name="text">
+             <string>Search</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>assets/images/search.svg</normaloff>assets/images/search.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="selectBtn">
+            <property name="text">
+             <string>Select</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>assets/images/select.svg</normaloff>assets/images/select.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="updateBtn">
+            <property name="text">
+             <string>Update</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>assets/images/update.svg</normaloff>assets/images/update.svg</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="title_label">
+         <property name="font">
+          <font>
+           <family>Script MT Bold</family>
+           <pointsize>28</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Students Information System</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="addBtn">
+      <property name="text">
+       <string>Add</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>assets/images/add.svg</normaloff>assets/images/add.svg</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1123</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
