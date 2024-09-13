@@ -12,6 +12,7 @@ from connect_database import ConnectDatabase
 
 class MainWindow(QMainWindow):  
     def __init__(self):
+        
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)  # Initialize the UI properly
@@ -54,14 +55,9 @@ class MainWindow(QMainWindow):
         self.deleteBtn.clicked.connect(self.delete_info)
         self.set_data_in_table()
 
-
-
-
-
     def search_info(self):
         # finction for search for student info and populate the table 
         
-        self.update_state_city()
         student_info = self.get_student_info()
         
         student_reslut = self.db.search_info(
@@ -75,31 +71,31 @@ class MainWindow(QMainWindow):
         
         self.show_data(student_reslut)
 
-    def update_state_city(self):
-        # function to populate the state and city dropdown
+    # def update_state_city(self):
+    #     # function to populate the state and city dropdown
 
-        state_result = self.db.get_all_states()
-        city_result = self.db.get_all_cities()
+    #     state_result = self.db.get_all_states()
+    #     city_result = self.db.get_all_cities()
 
-        self.state.clear()
-        self.city.clear()
+    #     self.state.clear()
+    #     self.city.clear()
 
-        state_list = [""]
-        for item in state_result:
-            for k,v in item.items():
-                if v != "":
-                    state_list.append(v)
+    #     state_list = [""]
+    #     for item in state_result:
+    #         for k,v in item.items():
+    #             if v != "":
+    #                 state_list.append(v)
         
-        city_list = [""]
-        for item in city_result:
-            for k,v in item.items():
-                if v != "":
-                    city_list.append(v)
+    #     city_list = [""]
+    #     for item in city_result:
+    #         for k,v in item.items():
+    #             if v != "":
+    #                 city_list.append(v)
 
-        if len(state_list) > 1:
-            self.state.addItems(state_list)
-        if len(city_list) > 1:
-            self.city.addItems(city_list)
+    #     if len(state_list) > 1:
+    #         self.state.addItems(state_list)
+    #     if len(city_list) > 1:
+    #         self.city.addItems(city_list)
 
     def add_info(self):
         self.disable_buttons()
@@ -164,7 +160,6 @@ class MainWindow(QMainWindow):
 
     def clear_form_info(self):
        # function for clearing the form
-       self.update_state_city()
        self.student_id.clear()
        self.student_id.setEnabled(True)
        self.first_name.clear()

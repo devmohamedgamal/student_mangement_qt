@@ -1,0 +1,58 @@
+[
+    {
+        "studentId": 1,
+        "firstName": "Mohamed",
+        "lastName": "Gamal",
+        "state": "student",
+        "city": "Giza",
+        "emailAddress": "giza Doki"
+    },
+    {
+        "studentId": 2,
+        "firstName": "Ahmed",
+        "lastName": "Gamal",
+        "state": "student",
+        "city": "Giza",
+        "emailAddress": "giza Doki"
+    },
+    {
+        "studentId": 3,
+        "firstName": "Samy",
+        "lastName": "Gamal",
+        "state": "student",
+        "city": "Giza",
+        "emailAddress": "giza Doki"
+    },
+    {
+        "studentId": 5,
+        "firstName": "gamal",
+        "lastName": "sgsfg",
+        "state": "student",
+        "city": "cairo",
+        "emailAddress": "sfgfs"
+    },
+    {
+        "studentId": 6,
+        "firstName": "fadfdaf",
+        "lastName": "adgadgad",
+        "state": "doctor",
+        "city": "giza",
+        "emailAddress": "adad"
+    },
+    {
+        "studentId": 7,
+        "firstName": "fadfadfa",
+        "lastName": "adgdagfa",
+        "state": "assestant",
+        "city": "giza",
+        "emailAddress": "adgadgd"
+    },
+    {
+        "studentId": 8,
+        "firstName": "hamad",
+        "lastName": "fady",
+        "state": "assestant",
+        "city": "elmansora",
+        "emailAddress": "adfad"
+    }
+]
